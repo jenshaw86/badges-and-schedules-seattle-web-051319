@@ -14,9 +14,8 @@ def assign_rooms(attendees)
   list = []
   attendees.each do |attendee|
     i = attendees.find_index(attendee)
-    
     message = "Hello, #{name}! You'll be assigned to room #{i}!"
-    list << message
+    list.push(message)
   end
   list
 end
