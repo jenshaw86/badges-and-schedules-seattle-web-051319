@@ -13,8 +13,8 @@ end
 def assign_rooms(attendees)
   list = []
   attendees.each do |attendee|
-    i = attendees.find_index(attendee)
-    message = "Hello, #{name}! You'll be assigned to room #{i}!"
+    i = attendees.find_index(attendee) + 1
+    message = "Hello, #{attendee}! You'll be assigned to room #{i}!"
     list.push(message)
   end
   list
